@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homework 21.2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+     <style>
+    html, body {
+      height: 100%;
+    }
+    .sidebar {
+      min-height: 100vh;
+    }
+    </style>
+</head>
+<body>
+<div>
+    <div class="row">
+        <div class="col-2 border bg-secondary text-white d-flex flex-column sidebar">
+            <h4 class="container text-center mt-4 fw-bold">Menu</h4>
+            <div class="px-3">
+                <p><button class="btn btn-secondary w-100 text-start">🏠 Main page</button></p>
+                <p><button class="btn btn-secondary w-100 text-start">📑 Catalogue</button></p>
+                <p><button class="btn btn-secondary w-100 text-start">🗂 Categories</button></p>
+                <p><button class="btn btn-primary w-100 text-start">🌐 Contacts</button></p>
+            </div>
+            <div class="mt-auto mb-3 px-3">
+                <p><button class="btn btn-secondary w-100">Profile</button></p>
+                <p><button class="btn btn-secondary w-100">Exit</button></p>
+                <div class="px-2">
+                    <div class="dropdown">
+                      <button class="btn btn-outline-red dropdown-toggle w-100" type="button"
+                              id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        USER
+                      </button>
+                      <ul class="dropdown-menu w-100" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="col-10 border bg-light">
+          <div class="container py-4">
+            <h1 class="text-center mb-4">Contacts</h1>
+
+            <div class="row">
+
+                <!-- Form on the left -->
+                <div class="col-md-5">
+                    <div class="mb-3">
+                          <label for="formGroupExampleInput" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">E-mail</label>
+                            <div class="input-group">
+                                 <div class="input-group-text">@</div>
+                                 <input type="text" class="form-control" id="formGroupExampleInput2">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <input class="btn btn-primary" type="submit" value="Submit">
+                        </div>
+                </div>
+                <div class="col-md-1"></div>
+                <!-- about contacts -->
+                <div class="col-md-6">
+                    <p> </p>
+                    <h3 class="text-start mb-4">Our contacts</h3>
+                    <p class="text-start">Early digital computers were electromechanical;
+                    electric switches drove mechanical relays to perform the calculation.
+                    These devices had a low operating speed and were eventually superseded
+                    by much faster all-electric computers, originally using vacuum tubes.
+                    The Z2, created by German engineer Konrad Zuse in 1939 in Berlin, was
+                    one of the earliest examples of an electromechanical relay computer.
+                    </p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
