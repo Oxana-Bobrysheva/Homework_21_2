@@ -52,22 +52,26 @@
 
                 <!-- Form on the left -->
                 <div class="col-md-5">
+                    <form action="/" method="POST">
                     <div class="mb-3">
                           <label for="formGroupExampleInput" class="form-label">Name</label>
-                          <input type="text" class="form-control" id="formGroupExampleInput">
+                          <input type="text" class="form-control" id="formGroupExampleInput" name="name" required>
                     </div>
                         <div class="mb-3">
                             <label for="formGroupExampleInput2" class="form-label">E-mail</label>
                             <div class="input-group">
                                  <div class="input-group-text">@</div>
-                                 <input type="text" class="form-control" id="formGroupExampleInput2">
+                                 <input type="text" class="form-control" id="formGroupExampleInput2"
+                                        name="email" required>
                             </div>
                         </div>
                         <div class="mb-3">
                           <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" name="message"
+                                    rows="3"></textarea>
                           <input class="btn btn-primary" type="submit" value="Submit">
                         </div>
+                    </form>
                 </div>
                 <div class="col-md-1"></div>
                 <!-- about contacts -->
